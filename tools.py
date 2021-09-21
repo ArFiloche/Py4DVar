@@ -105,7 +105,7 @@ class aimi_sl:
 
         if EpsM != None:
             U += EpsM[:,:,0]
-            V += EpsM[:,:,0]
+            V += EpsM[:,:,1]
 
 
         return torch.stack((U,V,Q),dim=2)
